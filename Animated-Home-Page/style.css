@@ -1,0 +1,109 @@
+body {
+    background: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: url("assets/foretlumdown.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* CONTAINER FIRST */
+.container-first {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 110px;
+    color: #F1F1F1;
+}
+h1 span {
+    position: relative;
+}
+
+/* CONTAINER BUTTONS */
+.container-buttons {
+    position: relative;
+    top: 50px;
+}
+.button-first {
+    border: 2px solid #F1F1F1;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    color: #F1F1F1;
+    cursor: pointer;
+}
+.b1 {
+    margin-right: 30px;
+}
+.button-first:hover {
+    transition: all 0.3s ease-in-out;
+    background: #F1F1F1;
+    color: #333333;
+}
+
+/* CONTAINER LINES */
+.lines {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+.line1, .line2 {
+    height: 3px;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+}
+.line1 {
+    width: 250px;
+}
+.line2 {
+    width: 140px;
+    position: relative;
+    top: 20px;
+}
+
+/* LOGO */
+.logo {
+    position: absolute;
+    right: 2.9%;
+    top: 4%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+/* SOCIAL MEDIAS */
+.medias {
+    list-style-type: none;
+    position: absolute;
+    right: 3.3%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    background: #F1F1F1;
+    cursor: pointer;
+    position: relative;
+}
+.logo-media {
+    width: 40px;
+    height: 40px;
+}
+
