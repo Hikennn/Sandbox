@@ -1,0 +1,54 @@
+body {
+    background: #282937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.box {
+    position: relative;
+    color: #F1F1F1;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.23, 1.83, 0.42, 1.19);
+}
+.box:hover {
+    transform: scale(1.2);
+}
+.box p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-family: 'Righteous', cursive;
+}
+
+.circle {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 3px solid #F1F1F1;
+    animation: 1s linear infinite alternate boxMagic, 4s linear infinite spinning;
+    padding-top: 340px;
+}
+
+@keyframes boxMagic {
+    from {
+        box-shadow: 0 0 0 #FEAC5E, 0 0 0 #C779D0, 0 0 0 #4BC0C8, 0 0 0 #42DB75;
+    }
+    to {
+        box-shadow: 0 -10px 0 #FEAC5E, -10px 0 0 #C779D0, 0 10px 0 #4BC0C8, 10px 0 0 #42DB75;
+    }
+}
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
