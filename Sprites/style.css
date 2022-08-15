@@ -1,0 +1,26 @@
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.box {
+    width: 191px;
+    height: 300px;
+    background: url("assets/sprites.png");
+}
+
+.box:nth-child(1) {
+    background-position: 0 0;
+}
+.box:nth-child(2) {
+    background-position: -191px 0;
+}
+.box:nth-child(3) {
+    background-position: -382px 0;
+}
+.box:nth-child(4) {
+    background-position: -573px 0;
+}
