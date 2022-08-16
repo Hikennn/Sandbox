@@ -14,21 +14,12 @@ ul {
 
 a {
     text-decoration: none;
-    color: #F1F1F1;
+    color: transparent;
+    -webkit-text-stroke: 1px #F1F1F1;
+}
 
-    position: relative;
-}
-a::before{
-    content : "";
-    position: absolute;
-    bottom: 0px;
-    left: 1px;
-    width: 0px;
-    border-bottom: 5px solid #F1F1F1;
-    transition: width 0.3s;
-}
-a:hover::before {
-    width: 100%;
+a:hover {
+    color: #F1F1F1;
 }
 
 .container {

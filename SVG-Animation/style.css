@@ -12,9 +12,9 @@ body {
 }
 
 .icone path:nth-child(1) {
-    stroke-dasharray: 1634px;
-    stroke-dashoffset: 1634px;
-    animation: animation 8s ease forwards;
+    stroke-dasharray: 2875px;
+    stroke-dashoffset: 2875px;
+    animation: animation 10s ease forwards;
 }
 
 @keyframes animation {
