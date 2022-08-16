@@ -1,0 +1,19 @@
+body {
+    background: #141414;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+}
+canvas {
+    border: 1px solid crimson;
+    border-radius: 10px;
+    background: #141414;
+    position: relative;
+    z-index: 100;
+    display: block;
+    margin: 75px auto;
+}
