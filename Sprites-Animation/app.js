@@ -8,7 +8,7 @@ let gameFrame = 0;
 let stagger = 0;
 const staggerFrame = 5;
 let index = 3;
-let playerState = 'dash';
+let playerState = 'run';
 
 const dropdown = document.getElementById('animations');
 
