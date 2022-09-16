@@ -4,7 +4,7 @@ body {
 }
 
 ul {
-    width: 40vw;
+    width: 50vw;
     height: 100vh;
     background: #141414;
     font-size: 64px;
@@ -23,7 +23,7 @@ a:hover {
 }
 
 .container {
-    width: 60vw;
+    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
