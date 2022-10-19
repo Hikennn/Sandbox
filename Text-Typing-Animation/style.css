@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #141414;
+    overflow: hidden;
+}
+
+.container {
+    width: 50%;
+    overflow: hidden;
+}
+
+.text {
+    position: relative;
+    color: rgb(163, 13, 13);
+    font-size: 6rem;
+    margin-right: 15px;
+}
+.first-text {
+    color: white;
+}
+.second-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #141414;
+    animation: animate 2s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: calc(100% + 4px);
+    }
+    100% {
+        left: 0%;
+    }
+}
