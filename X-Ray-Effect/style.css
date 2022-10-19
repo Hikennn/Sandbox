@@ -1,0 +1,23 @@
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+#bg-video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#xray-video {
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+}
+
+canvas {
+    position: relative;
+    z-index: 100;
+    display: block;
+}
