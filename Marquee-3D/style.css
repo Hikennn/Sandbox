@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #141414;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    z-index: -1;
+    transform: perspective(200px) rotateY(2deg);
+    animation: marquee 5s infinite linear;
+}
+
+.card {
+    display: flex;
+    flex-shrink: 0;
+    width: 500px;
+    height: 300px;
+    filter: grayscale(10%);
+    box-shadow: inset 0px 0px 50px 7px #000000;
+    background: url("https://images5.alphacoders.com/927/thumbbig-927025.webp");
+    object-fit: cover;
+}
+
+@keyframes marquee {
+    from {
+        transform: perspective(150px) rotateY(2deg) translateX(0%);
+    }
+    to  {
+        transform: perspective(150px) rotateY(2deg) translateX(-55.4%);
+    }
+}
