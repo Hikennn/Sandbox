@@ -4,8 +4,6 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    animation: slide 1s ease-in-out forwards;
-    animation-delay: 3.5s;
     background: url('https://media.giphy.com/media/kFgzrTt798d2w/giphy.gif') no-repeat;
     background-size: cover;
 }
@@ -16,7 +14,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    animation: slide 1s ease-in-out forwards;
+    animation-delay: 3.5s;
     background: #fee5ca;
 }
 
