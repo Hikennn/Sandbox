@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    width: 500px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(135deg, rgba(248,49,88,1) 0%, rgba(146,23,77,1) 100%);
+
+    transition: all 2s ease;
+}

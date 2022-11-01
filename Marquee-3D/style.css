@@ -28,10 +28,12 @@ body {
 }
 
 @keyframes marquee {
-    from {
-        transform: perspective(150px) rotateY(2deg) translateX(0%);
+    0% {
+        transform: perspective(150px) rotateY(2deg) translateX(0);
     }
-    to  {
-        transform: perspective(150px) rotateY(2deg) translateX(-55.4%);
+    
+    100% {
+        transform: perspective(150px) rotateY(2deg) translateX(-1041px);
     }
 }
+
