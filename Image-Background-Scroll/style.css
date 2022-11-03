@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-direction: column;
+    margin-top: 13%;
+    background-color: #141414;
+}
+
+.image {
+    border: 3px solid white;
+    height: 800px;
+    width: 400px;
+    background-image: url('./assets/image.jpg');
+}
+.image:nth-child(2n) {
+    margin-left: 25%;
+    margin-bottom: 15%;
+    background-position-x: 20%;
+}
+.image:nth-child(2n+1) {
+    margin-right: 20%;
+    margin-bottom: 25%;
+    background-position-x: 25%;
+}
