@@ -29,8 +29,6 @@ body {
 }
 
 #viewer {
-    height: 250px;
-    width: 250px;
     border-radius: 50%;
     mix-blend-mode: multiply;
     position: absolute;
