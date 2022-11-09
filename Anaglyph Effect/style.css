@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #141414;
+    overflow: hidden;
+}
+
+#container {
+    border-radius: 25px;
+    background: url("./assets/image.png");
+    background-size: cover;
+    height: 80vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#title {
+    color: black;
+    z-index: 999;
+    background-color: white;
+    padding: 10px 20px;
+    pointer-events: none;
+}
+
+#viewer {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    position: absolute;
+    display: none;
+    pointer-events: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250px; 
+    color: white;
+}
