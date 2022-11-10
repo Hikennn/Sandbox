@@ -9,43 +9,50 @@
     <link rel="stylesheet" href="home-button.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="transitions.css">
-    <link rel="stylesheet" href="cursor.css">
 
     <script src="transitions.js" defer></script>
-    <script src="cursor.js" defer></script>
+    <script src="burger.js" defer></script>
 </head>
 <body>
 
     <div class="transition transition-2 is-active"></div>
-    <a href="./index.html" class="go-home">🖤</a>
 
-    <ul>
-        <li><a data-text="Animated Home Page" href="Animated-Home-Page/animated-home-page.html">01. Animated Home Page</a></li>
-        <li><a data-text="Background Clip" href="Background-Clip/background-clip.html">02. Background Clip</a></li>
-        <li><a data-text="Canvas Video" href="Canvas-Video/canvas-video.html">03. Canvas Video</a></li>
-        <li><a data-text="Deformation Animation" href="Deformation-Animation/deformation-animation.html">04. Deformation Animation</a></li>
-        <li><a data-text="Floral Animation" href="Floral-Animation/floral-animation.html">05. Floral Animation</a></li>
-        <li><a data-text="Scroll Color Switch" href="Scroll-Color-Switch/scroll-color-switch.html">06. Scroll Color Switch</a></li>
-        <li><a data-text="Spinning Loader" href="Spinning-Loader/spinning-loader.html">07. Spinning Loader</a></li>
-        <li><a data-text="Sprites" href="Sprites/sprites.html">08. Sprites</a></li>
-        <li><a data-text="SVG Animation" href="SVG-Animation/svg-animation.html">09. SVG Animation</a></li>
-        <li><a data-text="Text Reveal" href="Text-Reveal/text-reveal.html">10. Text Reveal</a></li>
-        <li><a data-text="Marquee" href="Marquee/marquee.html">11. Marquee</a></li>
-        <li><a data-text="Sprites Animation" href="Sprites-Animation/sprites-animation.html">12. Sprites Animation</a></li>
-        <li><a data-text="Rounded Text" href="Rounded-Text/rounded-text.html">13. Rounded Text</a></li>
-        <li><a data-text="Image Hover Effect" href="Image-Hover-Effect/image-hover.html">14. Image Hover Effect</a></li>
-        <li><a data-text="Text Selection Effect" href="Text-Selection-Effect/text-selection-effect.html">15. Text Selection Effect</a></li>
-        <li><a data-text="Text Typing Animation" href="Text-Typing-Animation/text-typing-animation.html">16. Text Typing Animation</a></li>
-        <li><a data-text="X-Ray Effect" href="X-Ray-Effect/xray-effect.html">17. X-Ray Effect</a></li>
-        <li><a data-text="Liquid Distortion Effect" href="Liquid-Distortion-Effect/liquid-distortion-effect.html">18. Liquid Distortion Effect</a></li>
-        <li><a data-text="Loader Mr. Pops" href="Loader-MrPops/loader-mrpops.html">19. Loader Mr. Pops</a></li>
-        <li><a data-text="Marquee 3D" href="Marquee-3D/marquee3D.html">20. Marquee 3D</a></li>
-        <li><a data-text="Scroll Rotate 3D Object" href="Scroll-Rotate-3D/scroll-rotate3D.html">21. Scroll Rotate 3D Object</a></li>
-        <li><a data-text="AirBnb Button" href="AirBnb-Button/AirBnbButton.html">22. AirBnb Button</a></li>
-        <li><a data-text="Image Background Scroll" href="Image-Background-Scroll/image-background-scroll.html">23. Image Background Scroll</a></li>
-        <li><a data-text="Anaglyph Effect" href="Anaglyph Effect/anaglyph-effect.html">24. Anaglyph Effect</a></li>
-        <li><a data-text="Three.js Scroll Animation" href="ThreeJS-Scroll-Animation/threejs-scroll-animation.html">25. Three.js Scroll Animation</a></li>
-    </ul>
+    <div class="burger-menu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+    </div>
+
+    <div id="nav">
+        <header class="nav-header"></header>
+        <ul>
+            <li><a data-text="Animated Home Page" href="Animated-Home-Page/animated-home-page.html">01. Animated Home Page</a></li>
+            <li><a data-text="Background Clip" href="Background-Clip/background-clip.html">02. Background Clip</a></li>
+            <li><a data-text="Canvas Video" href="Canvas-Video/canvas-video.html">03. Canvas Video</a></li>
+            <li><a data-text="Deformation Animation" href="Deformation-Animation/deformation-animation.html">04. Deformation Animation</a></li>
+            <li><a data-text="Floral Animation" href="Floral-Animation/floral-animation.html">05. Floral Animation</a></li>
+            <li><a data-text="Scroll Color Switch" href="Scroll-Color-Switch/scroll-color-switch.html">06. Scroll Color Switch</a></li>
+            <li><a data-text="Spinning Loader" href="Spinning-Loader/spinning-loader.html">07. Spinning Loader</a></li>
+            <li><a data-text="Sprites" href="Sprites/sprites.html">08. Sprites</a></li>
+            <li><a data-text="SVG Animation" href="SVG-Animation/svg-animation.html">09. SVG Animation</a></li>
+            <li><a data-text="Text Reveal" href="Text-Reveal/text-reveal.html">10. Text Reveal</a></li>
+            <li><a data-text="Marquee" href="Marquee/marquee.html">11. Marquee</a></li>
+            <li><a data-text="Sprites Animation" href="Sprites-Animation/sprites-animation.html">12. Sprites Animation</a></li>
+            <li><a data-text="Rounded Text" href="Rounded-Text/rounded-text.html">13. Rounded Text</a></li>
+            <li><a data-text="Image Hover Effect" href="Image-Hover-Effect/image-hover.html">14. Image Hover Effect</a></li>
+            <li><a data-text="Text Selection Effect" href="Text-Selection-Effect/text-selection-effect.html">15. Text Selection Effect</a></li>
+            <li><a data-text="Text Typing Animation" href="Text-Typing-Animation/text-typing-animation.html">16. Text Typing Animation</a></li>
+            <li><a data-text="X-Ray Effect" href="X-Ray-Effect/xray-effect.html">17. X-Ray Effect</a></li>
+            <li><a data-text="Liquid Distortion Effect" href="Liquid-Distortion-Effect/liquid-distortion-effect.html">18. Liquid Distortion Effect</a></li>
+            <li><a data-text="Loader Mr. Pops" href="Loader-MrPops/loader-mrpops.html">19. Loader Mr. Pops</a></li>
+            <li><a data-text="Marquee 3D" href="Marquee-3D/marquee3D.html">20. Marquee 3D</a></li>
+            <li><a data-text="Scroll Rotate 3D Object" href="Scroll-Rotate-3D/scroll-rotate3D.html">21. Scroll Rotate 3D Object</a></li>
+            <li><a data-text="AirBnb Button" href="AirBnb-Button/AirBnbButton.html">22. AirBnb Button</a></li>
+            <li><a data-text="Image Background Scroll" href="Image-Background-Scroll/image-background-scroll.html">23. Image Background Scroll</a></li>
+            <li><a data-text="Anaglyph Effect" href="Anaglyph Effect/anaglyph-effect.html">24. Anaglyph Effect</a></li>
+            <li><a data-text="Three.js Scroll Animation" href="ThreeJS-Scroll-Animation/threejs-scroll-animation.html">25. Three.js Scroll Animation</a></li>
+        </ul>
+    </div>
 
     <div class="container">
         <h1>サンドボックス</h1>

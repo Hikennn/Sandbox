@@ -3,23 +3,62 @@ body {
     display: flex;
 }
 
-ul {
+#nav {
     width: 50vw;
     height: 100vh;
     background: #141414;
-    font-size: 64px;
-    padding: 20px;
+    font-size: clamp(20px, 3vw, 64px);
     overflow-y: scroll;
 }
-
+.nav-header {
+    height: 80px;
+    width: 100%;
+    background-color: #141414;
+    border-bottom: 2px solid white;
+    position: fixed;
+    z-index: 10;
+    display: none;
+}
+#nav ul {
+    padding: 20px;
+}
 a {
     text-decoration: none;
     color: transparent;
     -webkit-text-stroke: 1px #F1F1F1;
 }
-
 a:hover {
     color: #F1F1F1;
+}
+
+.burger-menu {
+    top: 20px;
+    right: 20px;
+    position: fixed;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+.burger-line {
+    background-color: #141414;
+    width: 50px;
+    height: 5px;
+    transition: all 0.3s;
+}
+.burger-line:nth-child(2n) {
+    margin: 10px 0px;
+}
+.burger-menu:hover > .burger-line:nth-child(2n) {
+    width: 30px;
+}
+.burger-menu-open > .burger-line:first-child {
+    animation: closeFirst 0.5s forwards;
+}
+.burger-menu-open > .burger-line:nth-child(2n){
+    animation: closeMiddle 0.5s forwards;
+}
+.burger-menu-open > .burger-line:last-child{
+    animation: closeLast 0.5s forwards;
 }
 
 .container {
@@ -28,7 +67,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 50px;
+    font-size: clamp(18px, 3vw, 64px);
     color: #141414;
 }
 .line {
@@ -36,7 +75,6 @@ a:hover {
     width: 50%;
     height: 5px;
 }
-
 h2 {
     text-align: center;
     font-size: 40px;
@@ -54,3 +92,49 @@ h2 {
     background: #5a5757; 
 }
 
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    #nav {
+        display: none;
+    }
+    .nav-header {
+        display: block;
+    }
+    #nav ul {
+        padding: 100px 20px 20px 20px;
+    }
+}
+
+
+@keyframes closeFirst {
+    80% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(15px) rotateZ(45deg);
+        background-color: white;
+    }
+}
+@keyframes closeMiddle {
+    100% {
+        width: 0px;
+    }
+}
+@keyframes closeLast {
+    80% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(-15px) rotateZ(-45deg);
+        background-color: white;
+    }
+}
