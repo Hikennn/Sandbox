@@ -3,6 +3,7 @@ body {
     display: flex;
 }
 
+
 #nav {
     width: 50vw;
     height: 100vh;
@@ -30,6 +31,7 @@ a {
 a:hover {
     color: #F1F1F1;
 }
+
 
 .burger-menu {
     top: 20px;
@@ -60,6 +62,7 @@ a:hover {
 .burger-menu-open > .burger-line:last-child{
     animation: closeLast 0.5s forwards;
 }
+
 
 .container {
     width: 50vw;

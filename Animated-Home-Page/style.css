@@ -6,17 +6,17 @@ body {
     background-size: cover;
     position: relative;
     overflow-x: hidden;
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
 /* CONTAINER FIRST */
 .container-first {
-    position: absolute;
-    top: 30%;
-    left: 5%;
+    padding-top: 14%;
 }
 h1 {
     text-transform: uppercase;
-    font-size: 110px;
+    font-size: clamp(18px, 5vw, 110px);
     color: #F1F1F1;
 }
 h1 span {
@@ -32,7 +32,7 @@ h1 span {
     border: 2px solid #F1F1F1;
     outline: none;
     background: transparent;
-    font-size: 30px;
+    font-size: clamp(18px, 5vw, 30px);
     padding: 20px;
     width: 300px;
     color: #F1F1F1;
@@ -48,11 +48,6 @@ h1 span {
 }
 
 /* CONTAINER LINES */
-.lines {
-    position: absolute;
-    top: 6%;
-    left: 5%;
-}
 .line1, .line2 {
     height: 3px;
     background-color: #F1F1F1;
@@ -80,14 +75,14 @@ h1 span {
 /* SOCIAL MEDIAS */
 .medias {
     list-style-type: none;
-    position: absolute;
-    right: 3.3%;
-    top: 50%;
-    transform: translateY(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    position: absolute;
+    right: 3.3%;
+    top: 38vh;
 }
 .circle {
     width: 60px;
@@ -105,5 +100,48 @@ h1 span {
 .logo-media {
     width: 40px;
     height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .container-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .medias {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+
+        top: 10%;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container-first {
+        padding-top: 10vh;
+    }
+
+    .button-first {
+        width: 80vw;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    .line1 {
+        width: 200px;
+    }
+    .line2 {
+        width: 150px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
 }
 
